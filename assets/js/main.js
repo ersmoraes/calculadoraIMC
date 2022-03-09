@@ -18,7 +18,7 @@ function calculaIMC() {
 function validaFormulario(peso, altura, imc, res) {
     if (peso == '' && altura == '') {
         res.innerHTML = `<p>Valores inválidos, favor preencher os campos!</p>`
-        res.classList.remove('resultado')
+        res.classList.add('invalido')
     }
     else if(peso == '') {
         res.innerHTML = `<p>Peso inválido!`
